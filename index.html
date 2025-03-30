@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<!--
+ __   __     ______     __   __     _____     __
+/\ "-.\ \   /\  __ \   /\ "-.\ \   /\  __-.  /\ \
+\ \ \-.  \  \ \  __ \  \ \ \-.  \  \ \ \/\ \ \ \ \
+ \ \_\\"\_\  \ \_\ \_\  \ \_\\"\_\  \ \____-  \ \_\
+  \/_/ \/_/   \/_/\/_/   \/_/ \/_/   \/____/   \/_/
+-->
+  <head>
+    <title>n a n d i</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico" />
+    <meta name="author" content="n a n d i">
+    <meta name="description" content="✦　˚　.　　˚　✦ ˚
+    　.　˚　. ✦　.
+    　　✦　 ✦　　˚　　.">
+    <meta property="og:image" content="https://i.imgur.com/Q1phmYq.png">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/modal.css">
+    <!--<link rel="stylesheet" type="text/javascript" href="assets/mute.js">-->
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- icon font feathericons.com -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css" rel="stylesheet">
+    <!-- clipboard button -->
+    <script>
+      function CopyMe(TextToCopy) {
+      var TempText = document.createElement("input");
+      TempText.value = TextToCopy;
+      document.body.appendChild(TempText);
+      TempText.select();
+      document.execCommand("copy");
+      document.body.removeChild(TempText);
+      alert("Copied the text: " + TempText.value);
+      }
+    </script>
+    <!-- tooltips -->
+    <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script src="assets/tooltips.js"></script>
+    <!-- icons -->
+    <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+  </head>
+  <body id="fade">
+    <!-- start of container -->
+    <div class="container">
+      <marquee class="slimeslide" behavior="slide" direction="left" scrollamount="1">
+        <img class="slime" src="graphics/bocchiSlime.gif">
+      </marquee>
+      <!-- left sidenav -->
+      <div class="side-nav">
+        <a title="unmute" class=""><i class="iconsax" icon-name="volume-high" id="ASong" onClick="playPause()">
+        <audio src="assets/bgm.mp3" autoplay loop></audio></i></a>
+          <script>
+            var aud = document.getElementById("ASong").children[0];
+            aud.volume = 0.15;
+            var isPlaying = false;
+            aud.pause();
+
+            function playPause() {
+            if (isPlaying) {
+            aud.pause();
+            } else {
+            aud.play();
+            }
+            isPlaying = !isPlaying;
+            }
+          </script>
+        <a title="copy discord name" class=""><i class="iconsax" icon-name="mail" onclick="CopyMe('nandi')"></i></a>
+        <a href="" title="archive - WIP" class=""><i class="iconsax" icon-name="folder-2"></i></a>
+      </div>
+      <!-- left sidebar -->
+      <div class="sidebar">
+        <img src="art/boccher1.gif" class="sidebar-icon">
+        <!-- left sidebar icon -->
+        <p>
+        <h2>
+          <br>ナンディ
+        </h2>
+        <div class="sidebar-links">
+          <a href="#portfolio"><i class="iconsax" icon-name="picture"></i>portfolio</a>
+          <a href="#about"><i class="iconsax" icon-name="user-2"></i>about</a>
+          <a href="#links"><i class="iconsax" icon-name="link-2"></i>links</a>
+          <a href="#journal"><i class="iconsax" icon-name="note-text"></i>journal</a>
+          <a href="#music"><i class="iconsax" icon-name="music-list"></i>playlists</a>
+          <a href="#contact"><i class="iconsax" icon-name="mail"></i>contact </a>
+          <a href="https://nandi.atabook.org/"><i class="iconsax" icon-name="book-open"></i>guestbook</a>
+        </div>
+      </div>
+      <!-- end left sidebar -->
+      <!-- PAGE CONTENT -->
+      <div class="content">
+        <!-- portfolio -->
+        <div class="content-block" id="portfolio">
+          <div class="mb-container">
+            <div class="image-grid">
+              <img class="modal_image image-grid-col-2" id="img_1" src="art/p1.png">
+              <img class="modal_image" id="img_1" src="art/p2.png">
+              <img class="modal_image" id="img_1" src="art/p3.png">
+              <img class="modal_image" id="img_1" src="art/p4.png">
+              <img class="modal_image" id="img_1" src="art/p5.png">
+              <img class="modal_image image-grid-col-2" id="img_1" src="art/p6.png">
+            </div>
+          </div>
+        </div>
+        <!-- end portfolio -->
+        <!-- about -->
+        <div class="content-block" id="about">
+          <div class="about-title">about me</div>
+          <div class="about-text"> washed up gamer & keyboard nerd <br> let me lube your keyboard :)) <br>
+            <br>
+            <h2>interests</h2>
+            <div class="thread-tags">
+              <i>anime</i>
+              <i>manga</i>
+              <i>music</i>
+              <i>guns & kits</i>
+              <i>interior design</i>
+              <i>interior design</i>
+              <i>bocchi the rock!</i>
+            </div>
+            <br>
+            <h2>hobbies</h2>
+            <div class="thread-tags">
+              <i>keyboards</i>
+              <i>video editing</i>
+              <i>fps games</i>
+              <i>photography</i>
+              <i>art</i>
+              <i>sleeping</i>
+            </div>
+            <br>
+            <h2>s/o</h2>
+            <marquee class="marquee" behavior="scroll" direction="left" scrollamount="4">re:kuso wiabu ● cyberia ● npss ● wendys ● scarborough fam ● kagamike fanclub ● r/uwaterloo ● dr pepper federation ● latex 4000 ● mosd's power gym ● synergy ● seoul</marquee>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <b>name</b>
+              <p>nandi</p>
+            </div>
+            <div class="about-stat">
+              <b>location</b>
+              <p>toronto, ca</p>
+            </div>
+            <div class="about-stat">
+              <b>career</b>
+              <p>student</p>
+            </div>
+          </div>
+          <div class="about-img" style="background-image:url('art/boccher.gif');"></div>
+        </div>
+        <!-- end about -->
+        <!-- contact -->
+        <div class="content-block" id="contact">
+          <div class="tags-left-title"> contact </div>
+          <div class="tags-left">
+            <ul>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="085ea367-c980-4bab-85d5-b33efd35aa9d">
+                <input name="name" type="text" class="feedback-input" placeholder="name" />
+                <input name="email" type="text" class="feedback-input" placeholder="email" />
+                <textarea name="message" class="feedback-input" placeholder="message"></textarea>
+                <input type="submit" value="submit" />
+                <input type="hidden" name="redirect" value="https://nandi.pw/#success">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="from_name" value="nandi.pw">
+                <input type="hidden" name="subject" value="Contact Form Message">
+              </form>
+            </ul>
+          </div>
+          <div class="tags-right-title"> business inquiries only </div>
+          <div class="tags-right">
+            <ul>
+            feel free to contact me if you need a keyboards, room/house planning, or video editing! <br>
+              <br>
+              <h2>skills</h2>
+              <div class="thread-tags">
+                <i>after effects</i>
+                <i>soldering</i>
+                <i>desoldering</i>
+                <i>lubing</i>
+                <i>html/css/js</i>
+                <i>room planning</i>
+                <i>roblox</i>
+                <i>bedrotting</i>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- end contact -->
+        <!-- contact success-->
+        <div class="content-block" id="success">
+          <div class="tags-left-title"> contact </div>
+          <div class="tags-left">
+            <ul>
+            message successfully sent!
+            </ul>
+          </div>
+          <div class="tags-right-title"> business inquiries only </div>
+          <div class="tags-right">
+            <ul>
+            feel free to contact me if you need a keyboards, room/house planning, or video editing! <br>
+              <br>
+              <h2>skills</h2>
+              <div class="thread-tags">
+                <i>after effects</i>
+                <i>soldering</i>
+                <i>desoldering</i>
+                <i>lubing</i>
+                <i>html/css/js</i>
+                <i>room planning</i>
+                <i>roblox</i>
+                <i>bedrotting</i>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- end contact success -->
+        <!-- music -->
+        <div class="content-block" id="music">
+          <div class="threads-title"> spotify playlists </div>
+          <div class="threads-tracker">
+            <div class="thread">
+              <!-- Playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/4DSfLZnRvMJpqRTQOrfWX3?si=a72345622a62463a">
+                  <font color="#EBBCBA">all time favs</font>
+                </a>
+              </h2>
+              <p>my goats fr</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4DSfLZnRvMJpqRTQOrfWX3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>various genres</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/0lbqeSzf11ZsDJiuciKxQ2?si=8c89b9f0339b4ebe">
+                  <font color="#EBBCBA">japanese hyperpop</font>
+                </a>
+              </h2>
+              <p>some of the beats go hard af wtf</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0lbqeSzf11ZsDJiuciKxQ2?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>japanese</i>
+                <i>hyperpop</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/75obSDEnGEYs7z2t76Rc8E?si=9c5935a99c324f8a">
+                  <font color="#EBBCBA">fav breakcore</font>
+                </a>
+              </h2>
+              <p>mfs be like sewerlvt isn't real breakcore. and i agree</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75obSDEnGEYs7z2t76Rc8E?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>breakcore</i>
+                <i>jungle</i>
+                <i>glitchbreak</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/2wqj4X2kki7Vccs4Vh5U9M?si=4dd7c1daf4454c1e">
+                  <font color="#EBBCBA">japanese folksong</font>
+                </a>
+              </h2>
+              <p>muji type shit</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2wqj4X2kki7Vccs4Vh5U9M?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>japanese indie</i>
+                <i>shibuya-kei</i>
+                <i>japanese indie</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/4bUIwYoEB8VU1TX1GRSOWq?si=de8e869fccdf4dfc">
+                  <font color="#EBBCBA">underground hip hip</font>
+                </a>
+              </h2>
+              <p>put the thang up to his brain</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4bUIwYoEB8VU1TX1GRSOWq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>underground hip hip</i>
+                <i>dark trap</i>
+                <i>emo rap</i>
+                <i>punk rap</i>
+                <i>cloud rap</i>
+                <i>horrorcore</i>
+                <i>rage rap</i>
+                <i>emo rap</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/11VmkoVIZN6CKqGNNWlnBE?si=1b15fada0dbc4898">
+                  <font color="#EBBCBA">math rock</font>
+                </a>
+              </h2>
+              <p>mostly intrumentals i enjoy while studying</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/11VmkoVIZN6CKqGNNWlnBE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>math rock</i>
+                <i>post-rock</i>
+                <i>midwest emo</i>
+                <i>japanese indie</i>
+                <i>j-rock</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/5SZcs2aIm0wBQqC2tfscZX?si=f182bc6b1dfa4c2c">
+                  <font color="#EBBCBA">bossa nova</font>
+                </a>
+              </h2>
+              <p>ok its mostly jazz but cmon its the same shit really</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5SZcs2aIm0wBQqC2tfscZX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>jazz</i>
+                <i>jazz beats</i>
+                <i>lo-fi</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/0Lwba8PBcKk8LGjAzDrpmE?si=1aca65ce934a4a55">
+                  <font color="#EBBCBA">actual bossa nova</font>
+                </a>
+              </h2>
+              <p>ok fine its very different</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0Lwba8PBcKk8LGjAzDrpmE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>brazillian jazz</i>
+                <i>bossa nova</i>
+                <i>exotica</i>
+                <i>jazz</i>
+              </div>
+              <br>
+              <!-- playlist -->
+              <h2>
+                <a href="https://open.spotify.com/playlist/3GAxhA6tSC5cOK6two9JBU?si=99aa415ecfdd47e1">
+                  <font color="#EBBCBA">ohio state university</font>
+                </a>
+              </h2>
+              <p>a collaborative playlist of osu songs my friends and i enjoy</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3GAxhA6tSC5cOK6two9JBU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="thread-tags">
+                <i>rhythm game</i>
+                <i>anime</i>
+                <i>various genres</i>
+              </div>
+              <br>
+              <!-- playlist info -->
+            </div>
+          </div>
+          <div class="threads-todo-title"> info </div>
+          <div class="threads-todo">
+            <br> a collection of various playlists i've made you should check out <h3>planned playlists</h3>
+            <ul>
+              <li>
+                <div class="check"></div>
+                <span> recent edm </span>
+              <li>
+                <div class="check"></div>
+                <span> metalcore </span>
+              <li>
+                <div class="check"></div>
+                <span> r&b </span>
+              <li>
+                <div class="check"></div>
+                <span> recent rap/hip-hop </span>
+              <li>
+                <div class="checked">
+                  <i data-feather="check"></i>
+                </div>
+                <span> japanese hyperpop </span>
+            </ul>
+          </div>
+        </div>
+        <!-- end music -->
+        <!-- journal -->
+        <div class="content-block" id="journal">
+          <div class="con-title"> journal </div>
+          <div class="con-content">
+            <!-- entry 4 -->
+            <div class="journal">
+              <div class="blog-header">
+                <img class="modal_image" id="img_1" src="art/20250304.png">
+                <div class="blog-name">
+                  <b color="#EBBCBA">i love marvel rivals</b>
+                  <span>2025/03/04</span>
+                </div>
+              </div>
+              <div class="blog-info">bouta hit diamond this week on my mama</div>
+            </div>
+            <!-- entry 3 -->
+            <div class="journal">
+              <div class="blog-header">
+                <img class="modal_image" id="img_1" src="art/20250302.png">
+                <div class="blog-name">
+                  <b color="#EBBCBA">make ceos afraid again</b>
+                  <span>2025/03/02</span>
+                </div>
+              </div>
+              <div class="blog-info">deny defend depose</div>
+            </div>
+            <!-- entry 2 -->
+            <div class="journal">
+              <div class="blog-header">
+                <img class="modal_image" id="img_1" src="art/20250229.png">
+                <div class="blog-name">
+                  <b color="#EBBCBA">i want to fix my m50x</b>
+                  <span>2025/02/29</span>
+                </div>
+              </div>
+              <div class="blog-info">why tf wont audio technica ship to canada, cringe shit cuh</div>
+            </div>
+            <!-- entry 1 -->
+            <div class="journal">
+              <div class="blog-header">
+                <img class="modal_image" id="img_1" src="art/20250228.png">
+                <div class="blog-name">
+                  <b color="#EBBCBA">i love btr</b>
+                  <span>2025/02/28</span>
+                </div>
+              </div>
+              <div class="blog-info">bocchi the rock is goated, god i wish i had my vinyl from kirakishou<br>
+                <br>big time rush is also swag
+              </div>
+            </div>
+          </div>
+          <div class="con-img" style="background-image:url('art/blogPage.png');"></div>
+        </div>
+        <!-- end journal -->
+        <!-- links -->
+        <div class="content-block" id="links">
+          <div class="con-title"> links </div>
+          <div class="con-content">
+            <br>
+            <div class="sidebar-links2">
+              <br>
+              <a href="https://ndkb.ca/"><i class="iconsax" icon-name="keyboard-1"></i>keyboards </a>
+              <a href="http://steamcommunity.com/id/Nyandi"><i class="iconsax" icon-name="game-controller"></i>steam </a>
+              <a href="https://www.youtube.com/channel/UCX_7IMDz5sBiKVWA8ErFGrg"><i class="iconsax" icon-name="play"></i>youtube </a>
+              <a href="https://www.last.fm/user/nandi-_-"><i class="iconsax" icon-name="music-list"></i>last.fm </a>
+              <a href="https://myanimelist.net/profile/Nandi"><i class="iconsax" icon-name="video-2"></i>mal </a>
+              <a href="https://corsage.rebirth.dev/"><i class="iconsax" icon-name="user-1-add"></i>rebirth.dev </a>
+              <a href="https://kambojk.lol/"><i class="iconsax" icon-name="user-1-add"></i>kambojk.lol </a>
+            </div>
+          </div>
+          <div class="con-img" style="background-image:url('art/linksPage.png');"></div>
+        </div>
+        <!-- end links -->
+        <!-- img modal -->
+        <div id="myModal" class="modal">
+          <img class="modal-content" id="img01">
+        </div>
+        <!-- modal script -->
+        <script type="text/javascript" src="assets/modal.js"></script>
+      </div>
+      <!-- END PAGE CONTENT -->
+    </div>
+    <!-- end of container -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="latex4000Webring">
+        <a href="https://nonacademic.net" title="Collective">
+          <span></span>
+          <span></span>latex 4000 </a>
+        <div class="latex4000WebringButtons">
+          <a href="https://nonacademic.net/ring?action=prev&amp;from=nandi" title="Previous">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>← </a>
+          <a href="https://nonacademic.net/ring?action=rand&amp;from=nandi" title="Random">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>random <a href="https://nonacademic.net/ring?action=next&amp;from=nandi" title="Next">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>→ </a>
+        </div>
+      </div>
+      <!--<p2>add me on discord: @nandi</p2>-->
+      <!-- ネットで個人情報を晒すのは、かなり危険なのでやめた方がいいですよ。﻿ -->
+    </footer>
+    <!-- background -->
+    <video id="vid" preload playsinline autoplay muted loop>
+      <source src="graphics/bg.mp4" type="video/mp4">
+      <script>document.getElementById("vid").volume = 0.15;</script>
+    </video>
+  </body>
+</html>
