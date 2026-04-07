@@ -6,7 +6,6 @@
 \ \ \-.  \  \ \  __ \  \ \ \-.  \  \ \ \/\ \ \ \ \
  \ \_\\"\_\  \ \_\ \_\  \ \_\\"\_\  \ \____-  \ \_\
   \/_/ \/_/   \/_/\/_/   \/_/ \/_/   \/____/   \/_/
- Updated: Dec 9 2025
 -->
   <head>
     <title>n a n d i</title>
@@ -16,7 +15,7 @@
     <meta name="author" content="n a n d i">
     <meta name="description" content="✦　˚　.　　˚　✦ ˚
     　.　˚　. ✦　.
-    　　✦　 ✦　　˚　　.">
+    　　✦　 ✦　　˚　　">
     <meta property="og:image" content="https://i.imgur.com/Q1phmYq.png">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/modal.css">
@@ -47,20 +46,56 @@
     <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
   </head>
   <body id="fade">
+
+    <!-- splash screen -->
+    <div id="splash">
+      <div class="splash-stars" id="splashStars"></div>
+      <div class="splash-inner">
+        <div class="splash-name"><span style="display:inline-flex;">ナンディ</span></div>
+        <p class="splash-sub" style="text-align:center;">welcome to nandi.pw</p>
+      </div>
+      <span class="splash-hint">click anywhere to enter</span>
+    </div>
+
+    <script>
+      // twinkling stars
+      const starsContainer = document.getElementById('splashStars');
+      for (let i = 0; i < 55; i++) {
+        const s = document.createElement('div');
+        s.className = 'splash-star';
+        s.style.left = Math.random() * 100 + '%';
+        s.style.top  = Math.random() * 100 + '%';
+        s.style.setProperty('--dur',   (2 + Math.random() * 3) + 's');
+        s.style.setProperty('--delay', (Math.random() * 3) + 's');
+        starsContainer.appendChild(s);
+      }
+      // click to enter
+      document.getElementById('splash').addEventListener('click', function() {
+        // cade out splash
+        this.classList.add('hide');
+        // fade in main content
+        document.getElementById('main-wrapper').classList.add('visible');
+        // start music
+        var aud = document.getElementById("ASong").children[0];
+        aud.play();
+        isPlaying = true;
+      });
+    </script>
+
     <!-- start of container -->
+    <div id="main-wrapper">
     <div class="container">
       <marquee class="slimeslide" behavior="slide" direction="left" scrollamount="1">
         <img class="slime" src="graphics/bocchiSlime.gif">
       </marquee>
       <!-- left sidenav -->
       <div class="side-nav">
-        <a title="unmute" class=""><i class="iconsax" icon-name="volume-high" id="ASong" onClick="playPause()">
-        <audio src="assets/bgm.mp3" autoplay loop></audio></i></a>
+        <a title="mute" class=""><i class="iconsax" icon-name="volume-mute" id="ASong" onClick="playPause()">
+        <audio src="assets/bgm.mp3" loop></audio></i></a>
           <script>
             var aud = document.getElementById("ASong").children[0];
             aud.volume = 0.15;
             var isPlaying = false;
-            aud.pause();
 
             function playPause() {
             if (isPlaying) {
@@ -135,7 +170,7 @@
             </div>
             <br>
             <h2>s/o</h2>
-            <marquee class="marquee" behavior="scroll" direction="left" scrollamount="4">@yinsdere ● mecka.ai ● re:kuso wiabu ● npss ● wendys ● scarborough fam ● kagamike fanclub ● $us mafia ● r/uwaterloo ● dr pepper federation ● latex 4000 ● mosd's power gym ● synergy ● seoul</marquee>
+            <marquee class="marquee" behavior="scroll" direction="left" scrollamount="4">re:kuso wiabu ● npss ● wendys ● scarborough fam ● kagamike fanclub ● r/uwaterloo ● dr pepper federation ● $us mafia ● mecka ai ● latex 4000 ● mosd's power gym ● synergy ● seoul</marquee>
           </div>
           <div class="about-stats">
             <div class="about-stat">
@@ -224,141 +259,31 @@
         <div class="content-block" id="music">
           <div class="threads-title"> spotify playlists </div>
           <div class="threads-tracker">
-            <div class="thread">
-              <!-- Playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/4DSfLZnRvMJpqRTQOrfWX3?si=a72345622a62463a">
-                  <font color="#EBBCBA">all time favs</font>
-                </a>
-              </h2>
-              <p>my goats fr</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4DSfLZnRvMJpqRTQOrfWX3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>various genres</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/0lbqeSzf11ZsDJiuciKxQ2?si=8c89b9f0339b4ebe">
-                  <font color="#EBBCBA">japanese hyperpop</font>
-                </a>
-              </h2>
-              <p>some of the beats go hard af wtf</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0lbqeSzf11ZsDJiuciKxQ2?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>japanese</i>
-                <i>hyperpop</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/75obSDEnGEYs7z2t76Rc8E?si=9c5935a99c324f8a">
-                  <font color="#EBBCBA">fav breakcore</font>
-                </a>
-              </h2>
-              <p>mfs be like sewerlvt isn't real breakcore. and i agree</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75obSDEnGEYs7z2t76Rc8E?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>breakcore</i>
-                <i>jungle</i>
-                <i>glitchbreak</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/2wqj4X2kki7Vccs4Vh5U9M?si=4dd7c1daf4454c1e">
-                  <font color="#EBBCBA">japanese folksong</font>
-                </a>
-              </h2>
-              <p>muji type shit</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2wqj4X2kki7Vccs4Vh5U9M?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>japanese indie</i>
-                <i>shibuya-kei</i>
-                <i>japanese indie</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/4bUIwYoEB8VU1TX1GRSOWq?si=de8e869fccdf4dfc">
-                  <font color="#EBBCBA">underground hip hip</font>
-                </a>
-              </h2>
-              <p>put the thang up to his brain</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4bUIwYoEB8VU1TX1GRSOWq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>underground hip hip</i>
-                <i>dark trap</i>
-                <i>emo rap</i>
-                <i>punk rap</i>
-                <i>cloud rap</i>
-                <i>horrorcore</i>
-                <i>rage rap</i>
-                <i>emo rap</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/11VmkoVIZN6CKqGNNWlnBE?si=1b15fada0dbc4898">
-                  <font color="#EBBCBA">math rock</font>
-                </a>
-              </h2>
-              <p>mostly intrumentals i enjoy while studying</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/11VmkoVIZN6CKqGNNWlnBE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>math rock</i>
-                <i>post-rock</i>
-                <i>midwest emo</i>
-                <i>japanese indie</i>
-                <i>j-rock</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/5SZcs2aIm0wBQqC2tfscZX?si=f182bc6b1dfa4c2c">
-                  <font color="#EBBCBA">bossa nova</font>
-                </a>
-              </h2>
-              <p>ok its mostly jazz but cmon its the same shit really</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5SZcs2aIm0wBQqC2tfscZX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>jazz</i>
-                <i>jazz beats</i>
-                <i>lo-fi</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/0Lwba8PBcKk8LGjAzDrpmE?si=1aca65ce934a4a55">
-                  <font color="#EBBCBA">actual bossa nova</font>
-                </a>
-              </h2>
-              <p>ok fine its very different</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0Lwba8PBcKk8LGjAzDrpmE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>brazillian jazz</i>
-                <i>bossa nova</i>
-                <i>exotica</i>
-                <i>jazz</i>
-              </div>
-              <br>
-              <!-- playlist -->
-              <h2>
-                <a href="https://open.spotify.com/playlist/3GAxhA6tSC5cOK6two9JBU?si=99aa415ecfdd47e1">
-                  <font color="#EBBCBA">ohio state university</font>
-                </a>
-              </h2>
-              <p>a collaborative playlist of osu songs my friends and i enjoy</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3GAxhA6tSC5cOK6two9JBU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              <div class="thread-tags">
-                <i>rhythm game</i>
-                <i>anime</i>
-                <i>various genres</i>
-              </div>
-              <br>
-              <!-- playlist info -->
+            <div class="thread" id="playlist-entries">
+              <!-- playlists are loaded from playlists.json -->
             </div>
           </div>
+          <script>
+            fetch('playlists.json')
+              .then(function(res) { return res.json(); })
+              .then(function(playlists) {
+                var container = document.getElementById('playlist-entries');
+                playlists.forEach(function(pl) {
+                  var tags = pl.tags.map(function(t) { return '<i>' + t + '</i>'; }).join('\n                ');
+                  var div = document.createElement('div');
+                  div.innerHTML =
+                    '<h2><a href="' + pl.url + '"><font color="#EBBCBA">' + pl.title + '</font></a></h2>' +
+                    '<p>' + pl.description + '</p>' +
+                    '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/' + pl.embedId + '?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' +
+                    '<div class="thread-tags">' + tags + '</div>' +
+                    '<br>';
+                  container.appendChild(div);
+                });
+              })
+              .catch(function(err) {
+                console.error('Could not load playlists:', err);
+              });
+          </script>
           <div class="threads-todo-title"> info </div>
           <div class="threads-todo">
             <br> a collection of various playlists i've made you should check out <h3>planned playlists</h3>
@@ -387,57 +312,36 @@
         <!-- journal -->
         <div class="content-block" id="journal">
           <div class="con-title"> journal </div>
-          <div class="con-content">
-            <!-- entry 4 -->
-            <div class="journal">
-              <div class="blog-header">
-                <img class="modal_image" id="img_1" src="art/20250304.png">
-                <div class="blog-name">
-                  <b color="#EBBCBA">i love marvel rivals</b>
-                  <span>2025/03/04</span>
-                </div>
-              </div>
-              <div class="blog-info">bouta hit diamond this week on my mama</div>
-            </div>
-            <!-- entry 3 -->
-            <div class="journal">
-              <div class="blog-header">
-                <img class="modal_image" id="img_1" src="art/20250302.png">
-                <div class="blog-name">
-                  <b color="#EBBCBA">make ceos afraid again</b>
-                  <span>2025/03/02</span>
-                </div>
-              </div>
-              <div class="blog-info">deny defend depose</div>
-            </div>
-            <!-- entry 2 -->
-            <div class="journal">
-              <div class="blog-header">
-                <img class="modal_image" id="img_1" src="art/20250229.png">
-                <div class="blog-name">
-                  <b color="#EBBCBA">i want to fix my m50x</b>
-                  <span>2025/02/29</span>
-                </div>
-              </div>
-              <div class="blog-info">why tf wont audio technica ship to canada, cringe shit cuh</div>
-            </div>
-            <!-- entry 1 -->
-            <div class="journal">
-              <div class="blog-header">
-                <img class="modal_image" id="img_1" src="art/20250228.png">
-                <div class="blog-name">
-                  <b color="#EBBCBA">i love btr</b>
-                  <span>2025/02/28</span>
-                </div>
-              </div>
-              <div class="blog-info">bocchi the rock is goated, god i wish i had my vinyl from kirakishou<br>
-                <br>big time rush is also swag
-              </div>
-            </div>
+          <div class="con-content" id="journal-entries">
+            <!-- entries are loaded from journal.json -->
           </div>
           <div class="con-img" style="background-image:url('art/blogPage.png');"></div>
         </div>
         <!-- end journal -->
+        <script>
+          fetch('journal.json')
+            .then(function(res) { return res.json(); })
+            .then(function(entries) {
+              var container = document.getElementById('journal-entries');
+              entries.forEach(function(entry) {
+                var div = document.createElement('div');
+                div.className = 'journal';
+                div.innerHTML =
+                  '<div class="blog-header">' +
+                    '<img class="modal_image" src="' + entry.image + '">' +
+                    '<div class="blog-name">' +
+                      '<b color="#EBBCBA">' + entry.title + '</b>' +
+                      '<span>' + entry.date + '</span>' +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="blog-info">' + entry.body + '</div>';
+                container.appendChild(div);
+              });
+            })
+            .catch(function(err) {
+              console.error('Could not load journal entries:', err);
+            });
+        </script>
         <!-- links -->
         <div class="content-block" id="links">
           <div class="con-title"> links </div>
@@ -451,7 +355,7 @@
               <a href="https://www.last.fm/user/nandi-_-"><i class="iconsax" icon-name="music-list"></i>last.fm </a>
               <a href="https://myanimelist.net/profile/Nandi"><i class="iconsax" icon-name="video-2"></i>mal </a>
               <a href="https://corsage.rebirth.dev/"><i class="iconsax" icon-name="user-1-add"></i>rebirth.dev </a>
-              <a href="https://kambojk.lol/"><i class="iconsax" icon-name="user-1-add"></i>kambojk.lol </a>
+              <a href="https://kambojk.xyz/"><i class="iconsax" icon-name="user-1-add"></i>kambojk.lol </a>
             </div>
           </div>
           <div class="con-img" style="background-image:url('art/linksPage.png');"></div>
@@ -459,6 +363,7 @@
         <!-- end links -->
         <!-- img modal -->
         <div id="myModal" class="modal">
+          <span id="modalClose" onclick="document.getElementById('myModal').style.display='none'" style="position:fixed;top:1.2rem;right:1.5rem;color:#fff;font-size:2rem;font-weight:200;cursor:pointer;z-index:10001;line-height:1;user-select:none;">&times;</span>
           <img class="modal-content" id="img01">
         </div>
         <!-- modal script -->
@@ -467,6 +372,7 @@
       <!-- END PAGE CONTENT -->
     </div>
     <!-- end of container -->
+    </div><!-- end main-wrapper -->
     <!-- footer -->
     <footer class="footer">
       <div class="latex4000Webring">
@@ -490,7 +396,7 @@
               <span></span>→ </a>
         </div>
       </div>
-      <!--<p2>add me on discord: @kita_hero</p2>-->
+      <!--<p2>add me on discord: kita_hero</p2>-->
       <!-- ネットで個人情報を晒すのは、かなり危険なのでやめた方がいいですよ。﻿ -->
     </footer>
     <!-- background -->
