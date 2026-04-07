@@ -803,7 +803,7 @@ textarea {
     border-radius:10px;
     border:0;
     cursor:url("../assets/cursor2.gif"), default;
-    color:white;
+    color: #313244;
     padding-top:15px;
     padding-bottom:15px;
     transition: all 0.3s;
